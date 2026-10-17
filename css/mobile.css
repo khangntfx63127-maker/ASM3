@@ -1,0 +1,20 @@
+/* MOBILE: < 768px */
+@media (max-width:767.98px){
+  .banner{height:260px}
+  .banner-overlay h1{font-size:1.6rem}
+  .nav-bar{position:static}
+  .nav-container{display:block;padding:5px 15px}   /* item xếp dọc */
+  .nav-container>*{border:0!important;text-align:left;padding:6px 0}
+  .menu-link{display:block}
+  .nav-brand{display:none}
+  .intro-wrap{background:none}
+  .intro-box{padding:30px 20px;background:#f2f2f2}
+  .personal-box{background:#ebeaec}
+  .cv-card{padding:20px}
+  .toggle-btn{display:inline-block}
+  .cert{flex-direction:column;padding:15px 0}
+  .cert:nth-child(odd){border-right:0}              /* chỉ còn border dưới */
+  .cert img{width:100%;max-width:100%}
+  .project-img{height:180px}
+  .footer-links{font-size:90%;gap:15px}
+}

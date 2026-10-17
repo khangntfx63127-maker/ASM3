@@ -1,0 +1,104 @@
+
+/* LAPTOP (>= 992px) + style dùng chung. Tablet/Mobile ghi đè ở file riêng */
+body{font-family:Arial,sans-serif;background:#fafbfc;color:#4a5568;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.hide{display:none!important}
+h3{font-size:1.25rem;color:#1a202c;font-weight:bold}
+ 
+/* Banner */
+.banner{background:url("../images/banner.jpg") center 30%/cover;height:380px}
+.banner-overlay{height:100%;background:rgba(0,0,0,.45);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:0 15px}
+.banner-overlay h1{font-size:2.5rem;font-weight:normal}
+.banner-overlay p{color:#e2e8f0;margin:0}
+ 
+/* Navbar */
+.nav-bar{background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:100;box-shadow:0 4px 6px -1px rgba(0,0,0,.05)}
+.nav-container{max-width:1140px;margin:0 auto;display:flex;align-items:center}
+.nav-container>*{flex:1;text-align:center;padding:12px 10px;border-left:1px solid #eee}
+.nav-container>*:last-child{border-right:1px solid #eee}
+.menu-link{font-size:.85rem;color:#333}
+.menu-link i{color:#199cdb;margin-right:5px}
+.nav-brand{text-align:center}
+.nav-brand h2{font-size:1.1rem;color:#1a202c;margin:0}
+.nav-brand p{font-size:.7rem;color:#a0aec0;margin:0}
+ 
+/* Thông tin cá nhân */
+.intro-box{background:#fff;padding:30px;border-radius:4px;height:100%}
+.personal-box{border-left:1px solid #e2e8f0}
+.info-list{list-style:none;padding:0}
+.info-list li{font-size:.85rem;margin-bottom:10px}
+.social-icons{display:flex;gap:15px;margin-top:20px}
+.social-icons a{font-size:1.1rem;color:#3182ce}
+ 
+/* Tiêu đề khối */
+.block-title{margin-bottom:25px;padding-bottom:10px;border-bottom:1px solid #e2e8f0}
+ 
+/* Lý lịch: card + View more/less */
+.cv-card{background:#fff;border:1px solid #edf2f7;border-radius:4px;padding:25px;transition:box-shadow .3s}
+.cv-card:hover{box-shadow:0 6px 18px rgba(0,0,0,.1)}
+.cv-head{display:flex;justify-content:space-between;align-items:center}
+.cv-head h4{font-size:1.2rem;color:#1a202c;margin:0;cursor:pointer}
+.cv-head i{font-size:1.5rem;color:#cbd5e0}
+.toggle-btn{display:none;margin-left:10px;padding:5px 10px;border:0;border-radius:4px;background:#199cdb;color:#fff;font-size:12px;transition:background .3s}
+.toggle-btn:hover{background:#087fb5}
+.cv-card:hover .toggle-btn,.cv-card.open .toggle-btn{display:inline-block}
+.cv-body{max-height:0;overflow:hidden;opacity:0;transition:max-height .5s ease,opacity .3s ease,margin .3s}
+.cv-card.open .cv-body{max-height:1000px;opacity:1;margin-top:20px}
+.sub-block{margin-bottom:20px}
+.sub-block h5{font-size:.9rem;color:#2d3748;margin-bottom:5px}
+.cv-body p{font-size:.8rem;color:#718096;margin-bottom:5px}
+.date-badge{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:.8rem;color:#718096}
+.status-badge{background:#3182ce;color:#fff;font-size:.7rem;padding:2px 6px;border-radius:3px}
+.hobby-container{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center}
+.hobby-item{display:flex;flex-direction:column;align-items:center;gap:8px}
+.hobby-icon{width:45px;height:45px;border:1px solid #3182ce;border-radius:50%;display:flex;justify-content:center;align-items:center;color:#3182ce}
+.hobby-item span{font-size:.7rem}
+.skill{margin-bottom:15px}
+.bar{background:#edf2f7;height:5px;border-radius:10px;overflow:hidden}
+.bar span{display:block;height:100%;background:#3182ce}
+ 
+/* Chứng chỉ */
+.cert{display:flex;gap:20px;padding:20px;border-bottom:1px solid #d6c08d}
+.cert:nth-child(odd){border-right:1px solid #d6c08d}
+.cert img{width:180px;max-width:40%;height:auto;object-fit:cover;border:1px solid #e2e8f0;align-self:flex-start}
+.cert h4{font-size:16px;color:#2d3748;margin-bottom:10px}
+.cert p{font-size:.85rem;color:#666}
+ 
+/* Dự án */
+.project-card{background:#fff;border:1px solid #edf2f7;overflow:hidden;height:100%}
+.project-img{width:100%;height:160px;object-fit:cover}
+.project-body{padding:20px}
+.project-body h4{font-size:1rem;color:#1a202c;margin-bottom:10px}
+.project-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:15px}
+.tag-blue{background:#ebf8ff;color:#2b6cb0;font-size:.7rem;padding:2px 8px;border-radius:3px;font-weight:bold}
+.tag-gray{background:#f7fafc;color:#4a5568;font-size:.7rem;padding:2px 8px;border-radius:3px}
+.project-table{width:100%;font-size:.8rem}
+.project-table td{padding:8px 0;vertical-align:top;color:#718096;border-top:1px solid #f7fafc}
+.project-table td:first-child{width:25%;color:#2d3748}
+.project-table tr:first-child td{border-top:0}
+ 
+/* Footer */
+.footer-section{background:#fff;border-top:1px solid #e2e8f0;padding:30px 0}
+.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:30px;font-size:110%}
+.footer-links a{color:#3182ce}
+ 
+/* ===== Chỉnh UI theo mẫu thiết kế ===== */
+body{background:#fff}
+.banner{height:450px}
+.banner-overlay h1{font-size:3.4rem;font-weight:300}
+.intro-wrap{background:linear-gradient(to right,#f2f2f2 50%,#ebeaec 50%)}
+.intro-box{background:transparent;border-radius:0;padding:60px 40px;height:auto}
+.personal-box{border-left:0}
+.intro-box h3,.block-title{font-size:1.8rem;font-weight:300;color:#333}
+.block-title{border:0;margin-bottom:30px}
+.cv-card{border-radius:0;padding:35px 30px;border-color:#eee}
+.cv-head{align-items:flex-start;min-height:90px}
+.cv-head h4{font-size:1.8rem;font-weight:300;align-self:flex-end}
+.cv-head i{font-size:3.5rem;color:#ddd}
+.sub-block{position:relative;padding-left:24px}
+.sub-block::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:#199cdb}
+.bar{height:2px}
+.cert h4{text-transform:uppercase;font-size:.9rem}
+.footer-links a{color:#999;font-size:.9rem}
+.footer-links i{color:#199cdb;font-size:1.6rem;vertical-align:middle}
+ 

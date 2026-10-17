@@ -1,0 +1,17 @@
+/* TABLET: 768px - 991.98px */
+@media (min-width:768px) and (max-width:991.98px){
+  .banner{height:380px}
+  .nav-brand{display:none}              /* ẩn tên giữa navbar */
+  .nav-container>*{padding:10px 6px}
+  .row{--bs-gutter-x:1rem}              /* thu hẹp khoảng cách giữa các cột */
+  .intro-box{padding:40px 25px}
+  .cv-card{padding:20px}
+  .toggle-btn{display:inline-block}     /* thiết bị cảm ứng không có hover */
+  .cert{gap:15px;padding:15px}
+  .cert img{width:130px}
+  .project-body{padding:12px}
+  .project-body h4{font-size:.85rem}
+  .project-table{font-size:.7rem}
+  .project-img{height:110px}
+  .footer-links{font-size:100%;gap:20px}
+}

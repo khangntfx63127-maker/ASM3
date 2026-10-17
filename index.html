@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 03 - CV Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+  </head>
+  <body>
+    <header class="banner">
+      <div class="banner-overlay">
+        <h1>Nguyễn Tuấn Khang</h1>
+        <p>Full Stack Developer</p>
+      </div>
+    </header>
+
+    <nav class="nav-bar">
+      <div class="nav-container">
+        <a href="#thong-tin" class="menu-link"
+          ><i class="icon-user"></i> THÔNG TIN</a
+        >
+        <a href="#ly-lich" class="menu-link"
+          ><i class="icon-doc-text-inv"></i> LÝ LỊCH</a
+        >
+        <div class="nav-brand">
+          <h2>Nguyễn Tuấn Khang</h2>
+          <p>Full Stack Developer</p>
+        </div>
+        <a href="#chung-chi" class="menu-link"
+          ><i class="icon-mail-alt"></i> CHỨNG CHỈ</a
+        >
+        <a href="#du-an" class="menu-link"><i class="icon-star-1"></i> DỰ ÁN</a>
+      </div>
+    </nav>
+
+    <section id="thong-tin" class="intro-wrap">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-12 col-md-6">
+            <div class="intro-box">
+              <h3>Mục tiêu nghề nghiệp</h3>
+              <p>
+                Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+                nghiệp của FUNiX. Với mong muốn mình sẽ được làm việc như một
+                Fullstack Developer, có thể vận dụng những kiến thức đã học được
+                trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+                hoàn thành tốt nhất công việc được giao.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="intro-box personal-box">
+              <!-- Container 1: form nhập email -->
+              <div id="email-box">
+                <h3>Thông tin cá nhân</h3>
+                <input
+                  type="text"
+                  id="email-input"
+                  class="form-control mt-3"
+                  placeholder="Enter email"
+                />
+                <div id="email-error" class="form-text text-danger hide"></div>
+                <div class="form-text">Hãy nhập email để xác thực</div>
+                <button
+                  id="email-submit"
+                  type="button"
+                  class="btn btn-primary mt-3"
+                >
+                  Submit
+                </button>
+              </div>
+              <!-- Container 2: thông tin (ẩn ban đầu) -->
+              <div id="info-box" class="hide">
+                <h3>Thông tin cá nhân</h3>
+                <ul class="info-list mt-3">
+                  <li><strong>Giới tính :</strong> Nam</li>
+                  <li><strong>Ngày sinh :</strong> 20/01/2010</li>
+                  <li><strong>Điện thoại :</strong> (+84) 912356xxx</li>
+                  <li>
+                    <strong>Email :</strong> nguyentuankhangisora@gmail.com
+                  </li>
+                  <li><strong>Địa chỉ :</strong> Số *0, đường *4, Đồng Nai</li>
+                  <li><strong>Website :</strong> https://abc.com</li>
+                </ul>
+                <div class="social-icons">
+                  <a href="#"><i class="icon-twitter"></i></a>
+                  <a href="#"><i class="icon-facebook"></i></a>
+                  <a href="#"><i class="icon-gplus"></i></a>
+                  <a href="#"><i class="icon-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container my-5">
+      <!-- LÝ LỊCH & KỸ NĂNG -->
+      <section id="ly-lich" class="mb-5">
+        <h3 class="block-title">LÝ LỊCH & KỸ NĂNG</h3>
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cv-card">
+              <div class="cv-head">
+                <h4>
+                  Kinh nghiệm
+                  <button class="toggle-btn" type="button">View more</button>
+                </h4>
+                <i class="ic-toolbox"></i>
+              </div>
+              <div class="cv-body">
+                <div class="sub-block">
+                  <h5>Full Stack Developer - Công ty Y</h5>
+                  <div class="date-badge">
+                    <span>05/2022 - </span
+                    ><span class="status-badge">Hiện tại</span>
+                  </div>
+                  <p>
+                    - Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu
+                    đã có.
+                  </p>
+                  <p>
+                    - Phân tích thiết kế database, sử dụng các hệ quản trị CSDL
+                    (MySQL, SQL Server, NoSQL,...) và viết được các câu truy
+                    vấn.
+                  </p>
+                  <p>
+                    - Sử dụng ngôn ngữ server-side (Python, Java,...) để xây
+                    dựng các Web Service.
+                  </p>
+                </div>
+                <div class="sub-block">
+                  <h5>Web Designer - Công ty X</h5>
+                  <div class="date-badge"><span>2021 - 2022</span></div>
+                  <p>- Thiết kế Website dựa trên yêu cầu của khách hàng.</p>
+                  <p>- Sử dụng các công cụ: Figma, Canva, Ps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cv-card">
+              <div class="cv-head">
+                <h4>
+                  Học vấn
+                  <button class="toggle-btn" type="button">View more</button>
+                </h4>
+                <i class="ic-pencil"></i>
+              </div>
+              <div class="cv-body">
+                <div class="sub-block">
+                  <h5>FUNiX</h5>
+                  <p>06/2021 - 05/2022</p>
+                  <p>- Tốt nghiệp chứng chỉ doanh nghiệp ngành Fullstack.</p>
+                  <p>- GPA: 9 / 10</p>
+                </div>
+                <div class="sub-block">
+                  <h5>Cử nhân - ĐH FPT</h5>
+                  <p>08/2016 - 07/2020</p>
+                  <p>- Chuyên ngành: Kỹ thuật phần mềm</p>
+                  <p>- GPA: 3.2 / 4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cv-card">
+              <div class="cv-head">
+                <h4>
+                  Sở thích
+                  <button class="toggle-btn" type="button">View more</button>
+                </h4>
+                <i class="ic-telescope"></i>
+              </div>
+              <div class="cv-body">
+                <div class="hobby-container">
+                  <div class="hobby-item">
+                    <div class="hobby-icon"><i class="ic-mic"></i></div>
+                    <span>Âm nhạc</span>
+                  </div>
+                  <div class="hobby-item">
+                    <div class="hobby-icon"><i class="icon-star-1"></i></div>
+                    <span>Chơi game</span>
+                  </div>
+                  <div class="hobby-item">
+                    <div class="hobby-icon">
+                      <i class="ic-hotairballoon"></i>
+                    </div>
+                    <span>Du lịch</span>
+                  </div>
+                  <div class="hobby-item">
+                    <div class="hobby-icon"><i class="ic-basket"></i></div>
+                    <span>Nấu ăn</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cv-card">
+              <div class="cv-head">
+                <h4>
+                  Ngôn ngữ
+                  <button class="toggle-btn" type="button">View more</button>
+                </h4>
+                <i class="ic-mic"></i>
+              </div>
+              <div class="cv-body">
+                <div class="skill">
+                  <p>Tiếng Anh - IELTS 7.0</p>
+                  <div class="bar"><span style="width: 70%"></span></div>
+                </div>
+                <div class="skill">
+                  <p>Tiếng Nhật - JLPT N4</p>
+                  <div class="bar"><span style="width: 40%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cv-card">
+              <div class="cv-head">
+                <h4>
+                  Kỹ năng
+                  <button class="toggle-btn" type="button">View more</button>
+                </h4>
+                <i class="ic-tools-2"></i>
+              </div>
+              <div class="cv-body">
+                <div class="skill">
+                  <p>HTML/CSS: <span>Fundamental</span></p>
+                  <div class="bar"><span style="width: 60%"></span></div>
+                </div>
+                <div class="skill">
+                  <p>JavaScript: <span>Intermediate</span></p>
+                  <div class="bar"><span style="width: 75%"></span></div>
+                </div>
+                <div class="skill">
+                  <p>NodeJS: <span>Intermediate</span></p>
+                  <div class="bar"><span style="width: 65%"></span></div>
+                </div>
+                <div class="skill">
+                  <p>Bootstrap 5: <span>Fundamental</span></p>
+                  <div class="bar"><span style="width: 50%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHỨNG CHỈ - GIẢI THƯỞNG (sửa tên ảnh và nội dung theo bài của bạn) -->
+      <section id="chung-chi" class="mb-5">
+        <h3 class="block-title">Chứng chỉ - Giải thưởng</h3>
+        <div class="row g-0">
+          <div class="col-12 col-md-6 cert">
+            <img
+              src="images/Cert_DBI.png"
+              class="img-fluid"
+              alt="Chứng chỉ DBI"
+            />
+            <div>
+              <h4>Chứng chỉ DBI</h4>
+              <p>Chứng chỉ hoàn thành khóa học tại FUNiX.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 cert">
+            <img
+              src="images/Cert_PRF.png"
+              class="img-fluid"
+              alt="Chứng chỉ PRF"
+            />
+            <div>
+              <h4>Chứng chỉ PRF</h4>
+              <p>Chứng chỉ hoàn thành khóa học tại FUNiX.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 cert">
+            <img
+              src="images/Cert_WEB.png"
+              class="img-fluid"
+              alt="Chứng chỉ WEB"
+            />
+            <div>
+              <h4>Chứng chỉ WEB</h4>
+              <p>Chứng chỉ hoàn thành khóa học tại FUNiX.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DỰ ÁN -->
+      <section id="du-an" class="mb-5">
+        <h3 class="block-title">Dự án</h3>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="project-card">
+              <img
+                src="images/project_1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <div class="project-body">
+                <h4>CV CÁ NHÂN</h4>
+                <div class="project-tags">
+                  <span class="tag-blue">2021</span
+                  ><span class="tag-gray"><i class="icon-user"></i> FUNiX</span
+                  ><span class="tag-gray">Developer</span>
+                </div>
+                <table class="project-table">
+                  <tr>
+                    <td><strong>Mô tả</strong></td>
+                    <td>
+                      Trang Web CV cá nhân online. Gồm các thông tin cá nhân
+                      cũng như kỹ năng nghề nghiệp.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Nhiệm vụ</strong></td>
+                    <td>
+                      - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Công nghệ</strong></td>
+                    <td>HTML, CSS</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="project-card">
+              <img
+                src="images/project_2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+              <div class="project-body">
+                <h4>TRANG WEB QUẢN LÝ THÚ CƯNG</h4>
+                <div class="project-tags">
+                  <span class="tag-blue">2021</span
+                  ><span class="tag-gray"><i class="icon-user"></i> FUNiX</span
+                  ><span class="tag-gray">Developer</span>
+                </div>
+                <table class="project-table">
+                  <tr>
+                    <td><strong>Mô tả</strong></td>
+                    <td>
+                      Ứng dụng giúp quản lý các thông tin thú nuôi trong một cửa
+                      hàng giặt, tỉa... bao gồm các chức năng thêm / sửa / xóa.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Nhiệm vụ</strong></td>
+                    <td>
+                      - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Công nghệ</strong></td>
+                    <td>HTML, CSS, JavaScript</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="project-card">
+              <img
+                src="images/project_3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+              <div class="project-body">
+                <h4>TRANG WEB TIN TỨC</h4>
+                <div class="project-tags">
+                  <span class="tag-blue">2021</span
+                  ><span class="tag-gray"><i class="icon-user"></i> FUNiX</span
+                  ><span class="tag-gray">Developer</span>
+                </div>
+                <table class="project-table">
+                  <tr>
+                    <td><strong>Mô tả</strong></td>
+                    <td>
+                      Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng
+                      có thể tìm kiếm các tin tức dựa theo các từ khóa.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Nhiệm vụ</strong></td>
+                    <td>
+                      - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Công nghệ</strong></td>
+                    <td>HTML, CSS, JavaScript</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-links">
+        <a href="#"><i class="icon-facebook-circled"></i> Facebook</a>
+        <a href="#"><i class="icon-linkedin-circled"></i> LinkedIn</a>
+        <a href="#"><i class="icon-github-circled"></i> Github</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
